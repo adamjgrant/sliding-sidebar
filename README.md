@@ -3,6 +3,8 @@ sliding-sidebar
 
 Full page sliding sidebar component for Kickstart
 
+# [DEMO](http://codepen.io/ajkochanowicz/pen/jLhCI)
+
 You'll just need one mixin for this, a bit of markup, and a JavaScript solution
 of your choosing.
 
