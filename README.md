@@ -3,11 +3,8 @@ sliding-sidebar
 
 Full page sliding sidebar component for Kickstart
 
-This component requires the use of four mixins:
-- `clip()`
-- `clip-canvas()`
-- `clip-main()`
-- `clip-aside()`
+You'll just need one mixin for this, a bit of markup, and a JavaScript solution
+of your choosing.
 
 # Clip
 
@@ -28,7 +25,7 @@ This element should be placed very high in the DOM
 
     .clip { @include clip(); }
 
-The clip mixin is where you'll define any customizations, like sidebar width:
+Optionally, specify sidebar width as the first parameter.
 
     .clip { @include clip(300px); }
 
@@ -74,5 +71,5 @@ Here's how to do this with a helper included in kickstart.js
     // Open
     k$.$('.clip section').classList.add('open');
 
-    // Open
+    // Close
     k$.$('.clip section').classList.remove('open');
