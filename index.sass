@@ -1,10 +1,12 @@
 =clip($sidebarWidth: 300px)
   width: 100%
   overflow: hidden
+  min-height: 100vh
 
   > section
     width: calc(100% + (#{$sidebarWidth}))
     transition: margin 0.20s ease-out
+    height: 100vh
 
     &.open
       margin-left: -$sidebarWidth
@@ -18,7 +20,9 @@
       // We need 5px here because 
       // http://css-tricks.com/fighting-the-space-between-inline-block-elements/
       padding: $space
+      background-color: $secondary-color
 
     > main, > aside
       display: inline-block
       vertical-align: top
+      height: 100%
